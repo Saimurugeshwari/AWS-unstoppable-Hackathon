@@ -1,0 +1,91 @@
+{
+    "User": {
+      "UserID": "string",
+      "Username": "string",
+      "Email": "string",
+      "Password": "string",
+      "WalletAddress": "string",
+      "Profile": {
+        "Bio": "string",
+        "ProfilePicture": "string",
+        "SocialMediaLinks": ["string"]
+      },
+      "Preferences": {
+        "Language": "string",
+        "AccessibilityOptions": ["string"]
+      }
+    },
+    "Domain": {
+      "DomainID": "string",
+      "DomainName": "string",
+      "OwnerUserID": "string",
+      "IPFSHash": "string",
+      "Price": "number",
+      "IsAvailableForSale": "boolean",
+      "Marketplace": {
+        "IsListed": "boolean",
+        "ListingPrice": "number",
+        "ListingExpiryDate": "string"
+      }
+    },
+    "Transaction": {
+      "TransactionID": "string",
+      "UserID": "string",
+      "DomainID": "string",
+      "TransactionType": "string",
+      "TransactionDate": "string",
+      "Amount": "number",
+      "PaymentMethod": "string"
+    },
+    "CommunityPost": {
+      "PostID": "string",
+      "UserID": "string",
+      "Content": "string",
+      "Likes": "number",
+      "Comments": ["Comment"],
+      "Tags": ["string"]
+    },
+    "Comment": {
+      "CommentID": "string",
+      "UserID": "string",
+      "Content": "string",
+      "Likes": "number",
+      "Replies": ["Comment"]
+    },
+    "Analytics": {
+      "UserID": "string",
+      "DomainID": "string",
+      "ActivityType": "string",
+      "ActivityDate": "string"
+    },
+    "IdentityVerification": {
+      "UserID": "string",
+      "VerificationStatus": "string",
+      "VerificationDetails": "string"
+    },
+    "Language": {
+      "LanguageID": "string",
+      "Name": "string",
+      "Code": "string"
+    },
+    "Documentation": {
+      "DocumentID": "string",
+      "Title": "string",
+      "Content": "string",
+      "Tags": ["string"]
+    },
+    "DomainSuggestion": {
+      "SuggestionID": "string",
+      "UserID": "string",
+      "SuggestedDomain": "string",
+      "Score": "number"
+    },
+    "ProfileLink": {
+      "ProfileLinkID": "string",
+      "UserID": "string",
+      "Platform": "string",
+      "Link": "string",
+      "Privacy": "string"
+    }
+  }
+  
